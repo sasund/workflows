@@ -47,9 +47,9 @@ jobs:
       - name: Create m2-settings
         uses: whelk-io/maven-settings-xml-action@9dc09b23833fa9aa7f27b63db287951856f3433d # v22
         with:
+          #             { "id": "github", "url": "https://maven.pkg.github.com/sasund/maven-release", "releases": { "enabled": "true" }, "snapshots": { "enabled": "false" } },
           repositories: '[
             { "id": "central", "url": "https://repo1.maven.org/maven2/", "releases": { "enabled": "true" }, "snapshots": { "enabled": "false" } },
-            { "id": "github", "url": "https://maven.pkg.github.com/sasund/maven-release", "releases": { "enabled": "true" }, "snapshots": { "enabled": "false" } },
             { "id": "confluent", "url": "https://packages.confluent.io/maven/" },
             { "id": "jitpack", "url": "https://jitpack.io" },
             { "id": "shibboleth", "url": "https://build.shibboleth.net/nexus/content/repositories/releases/" }
