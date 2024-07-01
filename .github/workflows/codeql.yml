@@ -54,9 +54,9 @@ jobs:
             { "id": "jitpack", "url": "https://jitpack.io" },
             { "id": "shibboleth", "url": "https://build.shibboleth.net/nexus/content/repositories/releases/" }
           ]'
-          servers: '[
-            { "id": "github", "username": "x-access-token", "password": "${{ secrets.READER_TOKEN }}" }
-          ]'
+#          servers: '[
+#            { "id": "github", "username": "x-access-token", "password": "${{ secrets.READER_TOKEN }}" }
+#          ]'
           output_file: settings.xml
 
       - name: Download toolchain file
